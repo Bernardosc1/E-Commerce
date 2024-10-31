@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    
+}
+
+header .nav-components{
+    display: flex;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+header .nav-components span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+header .nav-components span:hover{
+    color: rgb(187, 162, 48);
+}
+
+header .icon-components{
+    display: flex;
+    gap: 3rem;
+    margin-right: 2rem;
+}
+
+header .icon-components img{
+    cursor: pointer;
+}
+
+.home-first-part{   
+    background-image: url('../imgs/scandinavian-interior-mockup-wall-decal-background\ 1.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+
+.home-first-part .card-buy-now{   
+    min-width: 300px;
+    background-color: rgb(255, 255, 255);
+    height: 420px;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    margin-right: 18rem;
+    margin-bottom: 15rem;
+
+
+}
+
+@media screen {
+    
+}
+
+.home-first-part .card-buy-now .descriptions{   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.home-first-part .card-buy-now .descriptions p{
+    width: 95%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    text-overflow: clip;
+    margin-left: 1rem;
+}
+
+
+.home-first-part .card-buy-now .descriptions h1{
+    width: 60%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(187, 162, 48);
+    text-overflow: clip;
+    font-size: 3rem;
+    margin-left: 1rem;
+
+}
+
+.home-first-part .card-buy-now button{
+    min-width: 150px;
+    width: 35%;
+    background-color: rgb(187, 162, 48);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 25px;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+
+}
+
+.home-first-part .card-buy-now button:hover{
+    background-color: rgb(155, 137, 60);
+}
+
+.home-second-part{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-second-part .title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.home-second-part .section-images{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.home-second-part .section-images .img-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-second-part .section-images .img-div span{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+

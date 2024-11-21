@@ -6,6 +6,7 @@ const products = [
         originalPrice: "Rp 3.500.000",
         discount: "30%",
         image: "../imgs/home/image 1.png",
+        category: "Living",
         isNew: false
     },
     {
@@ -15,6 +16,7 @@ const products = [
         originalPrice: null,
         discount: null,
         image: "../imgs/home/image 2.png",
+        category: "Living",
         isNew: false
     },
     {
@@ -24,6 +26,7 @@ const products = [
         originalPrice: "Rp 14.000.000",
         discount: null,
         image: "../imgs/home/image 3.png",
+        category: "Living",
         isNew: false
     },
     {
@@ -33,6 +36,7 @@ const products = [
         originalPrice: null,
         discount: null,
         image: "../imgs/home/image 4.png",
+        category: "Living",
         isNew: false
     },
     {
@@ -42,6 +46,7 @@ const products = [
         originalPrice: null,
         discount: null,
         image: "../imgs/home/image 5.png",
+        category: "Living",
         isNew: false
     },
     {
@@ -51,6 +56,7 @@ const products = [
         originalPrice: null,
         discount: null,
         image: "../imgs/home/image 6.png",
+        category: "Living",
         isNew: false
     },
     {
@@ -60,6 +66,7 @@ const products = [
         originalPrice: "Rp 14.000.000",
         discount: null,
         image: "../imgs/home/image 7.png",
+        category: "Living",
         isNew: false
     },
     {
@@ -69,6 +76,7 @@ const products = [
         originalPrice: null,
         discount: null,
         image: "../imgs/home/image 8.png",
+        category: "Living",
         isNew: false
     }
     // Adicione mais produtos conforme necessário

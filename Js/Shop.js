@@ -74,13 +74,9 @@ const products = [
     // Adicione mais produtos conforme necessário
 ];
 
-document.addEventListener('DOMContentLoaded', () => {
-    const productsGrid = document.querySelector('.section-products');
-    if (productsGrid) {
-        productsGrid.innerHTML = products.map(product => createProductCard(product)).join('');
-    } else {
-        console.error("Container de produtos não encontrado.");
-    }
+// Função para criar o card do produto
+products.forEach(product =>{
+    createProductCard(product)
 });
 
 function createProductCard(product) {
@@ -113,19 +109,11 @@ function createProductCard(product) {
     `;
 }
 
-        // Adicionar eventos aos botões
-        document.addEventListener('click', (e) => {
-            if (e.target.classList.contains('add-to-cart')) {
-                // Implementar lógica do carrinho
-                console.log('Adicionado ao carrinho');
-            } else if (e.target.classList.contains('action-icon')) {
-                // Implementar lógica para favoritos/comparar
-                console.log('Ação do ícone clicada');
-            }
-        });
-
-        // Inicializar a página
-        renderProducts();
+// Renderizar produtos
+function renderProducts() {
+    const productsGrid = document.querySelector('.section-products');
+    productsGrid.innerHTML = products.map(product => createProductCard(product)).join('');
+}
 
 // Adicionar eventos aos botões
 document.addEventListener('click', (e) => {
@@ -139,47 +127,18 @@ document.addEventListener('click', (e) => {
      
 });
 
+var selectShow = document.getElementById('select-show');
+var showedResults = document.getElementById('showed-results');
+
+selectShow.onchange = function atualizarShow() {
+    if (selectShow.value === "16") {
+        showedResults.innerHTML = "16";
+    } else if (selectShow.value === "32") {
+        showedResults.innerHTML = "32";
+    }
+};
+
+
+
 // Inicializar a página
-function showed() {
-    try {
-        const showedResults = document.getElementById("showed-results");
-        const totalResults = document.getElementById("total-results");
-        const selectShow = document.getElementById("select-show");
-        
-        // Verifique se os elementos existem
-        if (!showedResults || !totalResults || !selectShow) {
-            console.error("Elementos não encontrados");
-            return;
-        }
-        
-        // Atualiza os valores diretamente
-        showedResults.innerText = selectShow.value;
-        
-        // Certifique-se de que `products` está definido
-        if (typeof products !== 'undefined') {
-            totalResults.innerText = products.length;
-        } else {
-            console.error("A variável 'products' não está definida.");
-        }
-        
-    } catch (error) {
-        console.error("Erro ao atualizar os resultados:", error);
-    }
-}
-
-// Função de inicialização
-function initializeShop() {
-    try {
-        showed();
-        
-        const selectShow = document.getElementById("select-show");
-        if (selectShow) {
-            selectShow.addEventListener('change', showed);
-        }
-    } catch (error) {
-        console.error("Erro na inicialização:", error);
-    }
-}
-
-// Aguarda o DOM carregar
-document.addEventListener('DOMContentLoaded', initializeShop);
+renderProducts();

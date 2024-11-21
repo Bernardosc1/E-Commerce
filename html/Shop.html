@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="../css/Shop.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="../imgs/home/Logo.png" />
+      <div class="nav-components">
+        <a href="../html/Home.html">Home</a>
+        <a href="../html/Shop.html">Shop</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </div>
+      <div class="icon-components">
+        <img src="../imgs/home/mdi_account-alert-outline.png" alt="" />
+        <img src="../imgs/home/akar-icons_search.png" alt="" />
+        <img src="../imgs/home/akar-icons_heart.png" alt="" />
+        <img src="../imgs/home/ant-design_shopping-cart-outlined.png" alt="" />
+      </div>
+    </header>
+    <div class="banner">
+      <h1>Shop</h1>
+      <div class="text">
+        <a href="/html/Home.html">Home</a>
+        <span id="arrow">></span>
+        <span>Shop</span>
+      </div>
+    </div>
+    <div class="filter-section">
+      <div class="div1">
+        <div class="icons">
+            <img src="../imgs/shop/Group 57.png" width="85px" height="30px">
+            <img src="../imgs/shop/ci_grid-big-round.png" width="28" height="28px">
+            <img src="../imgs/shop/bi_view-list.png" width="24" height="24px">
+        </div>
+        <div class="infos">
+          <p>
+            Showing 1- <span id="showed-results">16</span> of
+            <span id="total-results">52</span>
+          </p>
+        </div>
+      </div>
+      <div class="options">
+        <div id="show">
+            <p>Show</p>
+            <select name="" id="select-show" >
+                <option value="16">16</option>
+                <option value="32">32</option>
+            </select>
+        </div>
+        <div id="ShortBy">
+            <p>Short By</p>
+            <select name="" id="">
+                <option value="16">Default</option>
+                <option value="32"></option>
+            </select>
+        </div>
+      </div>
+    </div>
+    <div class="section-products">
+      <div class="product-card">
+        <div class="product-image">
+            <img src="../imgs/home/image 1.png" alt="Syltherine">
+            <span class="product-badge badge-discount">-30%</span>
+        </div>
+        <div class="product-info">
+            <h2 class="product-name">Syltherine</h2>
+            <p class="product-description">Stylish cafe chair</p>
+            <div class="product-price">
+                <span class="current-price">Rp 2.500.000</span>
+                <span class="original-price">Rp 3.500.000</span>
+            </div>
+            <div class="product-actions">
+                <button class="action-button add-to-cart">Add to cart</button>
+                <button class="action-button action-icon">♡</button>
+                <button class="action-button action-icon">⇄</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="section-global">
+        <div class="section-1">
+          <h2>Funiro.</h2>
+          <p>
+            400 University Drive Suite 200 Coral <br> Gables,
+            <br> FL 33134 USA
+          </p>
+        </div>
+        <div class="section-2">
+          <div class="section-links">
+            <p>Links</p>
+            <a href="../html/Home.html">Home</a>
+            <a href="../html/Shop.html">Shop</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+          </div>
+          <div class="section-help">
+            <p>Help</p>
+            <a href="">Payment Options</a>
+            <a href="">Returns</a>
+            <a href="">Privacy Policy</a>
+          </div>
+          <div class="section-form">
+            <p>Newsletter</p>
+            <div class="form">
+              <input type="text" placeholder="Enter Your Email Address">
+              <button>Subscribe</button>
+            </div>
+          </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../Js/Shop.js"></script>
+</html>

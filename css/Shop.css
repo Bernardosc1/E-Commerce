@@ -28,7 +28,7 @@ header .nav-components{
 header .nav-components a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
-    color: #000;
+    color: black;
     text-decoration: none;
 }
 
@@ -46,144 +46,136 @@ header .icon-components img{
     cursor: pointer;
 }
 
-.home-first-part{   
-    background-image: url('../imgs/home/scandinavian-interior-mockup-wall-decal-background\ 1.png');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
+.banner{
     display: flex;
-    justify-content: end;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 800px;
-}
-
-.home-first-part .card-buy-now{   
-    min-width: 300px;
-    background-color: rgb(255, 255, 255);
-    height: 420px;
-    width: 34%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
-    margin-right: 18rem;
-    margin-bottom: 15rem;
-
-
-}
-
-@media screen {
-    
-}
-
-.home-first-part .card-buy-now .descriptions{   
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-}
-
-.home-first-part .card-buy-now .descriptions p{
-    width: 95%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 300;
-    text-overflow: clip;
-    margin-left: 1rem;
-}
-
-
-.home-first-part .card-buy-now .descriptions h1{
-    width: 60%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #B88E2F;
-    text-overflow: clip;
-    font-size: 3rem;
-    margin-left: 1rem;
-
-}
-
-.home-first-part .card-buy-now button{
-    min-width: 150px;
-    width: 35%;
-    background-color: #B88E2F;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: none;
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 25px;
-    color: white;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    cursor: pointer;
-
-}
-
-.home-first-part .card-buy-now button:hover{
-    background-color: rgb(228, 189, 14);
-}
-
-.home-second-part{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    width: 100%;
+    height: 40%;
+    background-image: url("../imgs/shop/Rectangle\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    gap: 0.5rem;
+
 }
 
-.home-second-part .title{
+.banner h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 32px;
+}
+
+.banner .text{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    margin-bottom: 1rem;
+   gap: 0.5rem;
 }
 
-.home-second-part .section-images{
+.banner .text a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.banner .text #arrow{
+    color: black;
+    font-weight: 400;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.filter-section{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 2rem;
 }
 
-
-.home-second-part .section-images .img-div{
+.filter-section .div1{
+    width: 35%;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    flex-direction: row;
+    margin-left: 2rem;
+    gap: 3rem;
 }
 
-.home-second-part .section-images .img-div span{
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
-.home-third-part{
+.filter-section .div1 .icons{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    width: 70%;
+    gap: 1rem;
+    border-right: 1px black solid ;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-section .div1 .infos{
+    display: flex;
+    width: 30%;
+}
+
+
+.filter-section .div1 .infos p{
+    display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
+    margin-right: 10px;
+    gap: 6px;
+}
+
+.options{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    gap: rem;
+}
+
+.options #show{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
     gap: 2rem;
-    margin-top: 3rem;
 }
 
-.home-third-part h1{
-        text-align: center;
-        margin-bottom: 2rem;
-  
+.options #show p{
+    display: flex;
+    align-items: center;
 }
 
-.home-third-part .section-products{
+.options #show select{
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    color: gray;
+}
+
+.options #ShortBy{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    gap: 2rem;
+}
+
+.options #ShortBy p{
+    display: flex;
+    align-items: center;
+}
+
+.options #ShortBy select{
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    color: gray;
+}
+
+.section-products{
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 .product-card {
@@ -298,16 +290,6 @@ header .icon-components img{
     background: #eee;
 }
 
-#show-more{
-    width: 12%;
-    height: 3rem;
-    border: #B88E2F 2px solid;
-    color: #B88E2F;
-    font-weight: 500;
-    cursor: pointer;
-    margin: 1rem;
-}
-
 footer{
     display: flex;
     flex-direction: row;
@@ -411,19 +393,3 @@ footer .section-2 .section-form button{
     font-size: medium;
     font-weight: 600;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
